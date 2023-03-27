@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My test page</title>
+
+    <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+   <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+<script>
+function myFunction() {
+  let x = document.getElementById("demo");
+  x.style.fontSize = "20px"; 
+  x.style.color = "white"; 
+}
+</script>
+ <body>
+  <nav class="container">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Music</a>
+  <a href="#">Dance</a>
+  <a href="#">Design</a>
+</nav>
+<p>This is animation page </p>
+<h1>The transition-timing-function Property</h1>
+<p>The rotateZ method rotates an element around its z-axis at a given degree.</p>
+<div>
+Home: this is a normal division element.It has the front page
+</div>
+<div id="myDiv">
+About:shows styles about transition in html.
+</div>
+<p>Hover over the div elements below, to see the different speed curves:</p>
+<div id="div1">Music: an image can have a song</div><br>
+<div id="div2">Dance: an image or object can been seen dancing</div><br>
+<div id="div3">Design: using script in html can have different styles</div><br>
+
+<h2>Tabbed Image Gallery</h2>
+<div class="rows">
+<div class="column">
+    <img src="paris.jpg" alt="Design" style="width:200%" onclick="myFunction(this);">
+  </div><br><br>
+</div>
+<p>Click on the images below:</p>
+</div>
+<div class="column">
+    <img src="greek.jpg" alt="Design" style="width:200%" onclick="myFunction(this);">
+  </div><br>
+  </div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = 'Hello Doctor my name is:<br> Olubunmi Salami';
+</script>
+<button onclick="myFunction()">Click Me!</button><br>
+<a href=https://www.mozilla.org/>favorite website</a>
+<a href=https://www.w3schools.com/>best Html  website</a>
+<p>Mar 14 2023</p>
+<h5 id="myH"></h5>
+<p id="myP"></p>
+
+<script>
+/*
+The code below will change
+the heading with id = "myH"
+and the paragraph with id = "myP"
+*/
+document.getElementById("myH").innerHTML = "Comments";
+document.getElementById("myP").innerHTML = "";
+</script>
+<p id="myP"></p>
+
+
+
+</head>
+</body>
+</html>

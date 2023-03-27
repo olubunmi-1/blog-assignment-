@@ -1,0 +1,120 @@
+html {
+  background-color: orange;
+  font-size: 20px;
+
+}
+ul {
+  background: red;
+  padding: 10px;
+  border: 1px solid black;
+}
+body,
+html {
+  margin: 0;
+  font-family: times new roman;
+}
+.container {
+  display: flex;
+  gap: 0.625%;
+}
+a {
+  flex: 1;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 3;
+  color: white;
+}
+a:link,
+a:visited,
+a:focus {
+  background: palegoldenrod;
+  color: black;
+}
+a:hover {
+  background: green;
+}
+a:active {
+  background: darkred;
+  color: white;
+}
+
+div {
+  width: 110px;
+  height: 150px;
+  background: yellow;
+  transition: width 5s;
+  border: 1px solid black;
+}
+
+#myDiv {
+  transform: rotateZ(30deg);
+}
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+div:hover {
+  width: 300px;
+
+div {
+  width: 100px;
+  height: 140px;
+  background: white;
+  transition: width 2s;
+  padding: 10px;
+  border: 1px solid black;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Times New Roman;
+}
+
+/* The grid: two equal rows that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+.column img:hover {
+  opacity: 1;
+}
+/* Clear floats after the rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+

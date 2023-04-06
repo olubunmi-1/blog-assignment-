@@ -1,0 +1,57 @@
+html {
+  background-color: red;
+  font-size: 20px;
+
+}
+ul {
+  background: red;
+  padding: 10px;
+  border: 1px solid black;
+}
+body,
+html {
+  margin: 0;
+  font-family: times new roman;
+}
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: blue;
+}
+.container {
+  display: flex;
+  gap: 0.625%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hide {
+  display: none;
+}
+img.a {
+  width: 200px;
+  height: 400px;
+  object-fit: none;
+  object-position: right top;
+  border: 5px solid red;
+} 
+
+

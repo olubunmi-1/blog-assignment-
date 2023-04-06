@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Temperature Converter</title>
+   <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="decription" content="This is a HTML document containing HTML tags">
+	<link rel="icon" type="image/x-icon" href="sap.jpg">
+<link rel="stylesheet" type="text/css" href="patt.css">
+<script src="script.js" defer></script>
+<script>
+function myFunction() {
+  let x = document.getElementById("demo");
+  x.style.fontSize = "20px"; 
+  x.style.color = "white"; 
+}
+</script>
+</head>
+
+<body>
+<h2>Temperature Converter</h2>
+<h3>Display an Element on Hover</h3>
+<div class="myDIV">Hover over me.</div>
+<div class="hide">Mercury is one of the most familiar materials used in liquid thermometers. Other liquids, such as kerosene or ethanol, may also be used in these types of thermometers. When heat rises, the liquid expands from a bowl or bulb into the empty area, climbing up the tube.Temporary variables are usually named with identifiers that abbreviate the word temporary, such as temp, tmp or simply t, or with common metasyntactic variable names, the most common of which are foo, bar, and baz. </div>
+<p> There is a range of thermometers available for home use, including digital, ear, strip and infrared thermometers. Some thermometers are more suited for specific age groups and situations.</p>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+   
+<h3>Celcius To Fahrenheit</h3>
+ <h5 id="demo">Output here</h5>
+    <input type="text" id="inp" value="enter celsius">
+    <button onclick="convertToFahrenheit()">Convert</button>
+
+    <script>
+       function convertToFahrenheit() {
+          let celsius = document.getElementById("inp").value;
+          let fahrenheit = (celsius * 9/5) + 32;
+          document.getElementById("demo").innerHTML = fahrenheit + "F";
+        }
+    </script>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+ <h3>Fahrenheit To Celcius</h3>   
+<label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+<button onclick="convertToFahrenheit()">Convert</button>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+
+</div>
+<div class="column">
+    <img src="temp.jpg" alt="thermometer" width="400" height="300">
+ 
+  </div><br>
+  </div><br>
+<br>
+<button onclick="myFunction()">Click Me!</button><br>
+<a href=https://www.mozilla.org/>favorite website</a>
+<a href=https://www.w3schools.com/>best Html  website</a><br>
+<br>
+<h4>Name and Date:</h4>
+<a>Olubunmi Salami</a>
+<p>April 04 2023</p>
+<p id="myP"></p>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+
+
+</body>
+</html>

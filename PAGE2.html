@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+	<title>Page 2</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="mar2.css"/>
+<meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+   <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+	<link rel="shortcut icon" href="jollof.ico">
+<script>
+function myFunction() {
+  let x = document.getElementById("demo");
+  x.style.fontSize = "20px"; 
+  x.style.color = "white"; 
+}
+</script>
+
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tabcontent">
+  <h2>Home</h2>
+  <p>Home is where the heart is.</p>African Traditions are expressed through music, art, dance and sculpture</p><p>African Tradition is expressed through many different art forms, such as music, dance, art, sculpture and beadwork. These traditions are deeply ingrained into the whole African culture.</p><p>Africa's rich history and culture are so diverse that it varies not only from one country to another but also within regions and countries. The culture of each ethnic group holds together the authentic social fabric of traditional practices and rites, art, music, and oral literature through which identities are built.<p/>
+  <h3>The Most Popular Tribes in Africa</h3>
+   <nav>
+    <ul>
+       <li><a href="#">Yoruba, Nigeria</a></li>
+      <li><a href="#">The Karo, Ethiopia</a></li>
+       <li><a href="#">The Maasai, Kenya, and Tanzania</a></li>
+      <li><a href="#">The Himba, Namibia</a></li>
+      <li><a href="#">Zulu, South Africa</a></li>	
+    </ul>
+  </nav>
+
+
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>Yoruba, Nigeria</h3>
+  <p>With an estimated 35 million people in total, Yoruba is undeniably the largest ethnic group in Africa.
+
+Members occupy the South Western sides of Nigeria, as well as Southern Benin, but the majority comes from Nigeria. 
+
+They have a rich history and cultural heritage tracing back to the old Oyo Empire.</p><p>Yoruba culture consists of cultural philosophy, religion and folktales. They are embodied in Ifa divination, and are known as the tripartite Book of Enlightenment in Yorubaland and in its diaspora. Yoruba cultural thought is a witness of two epochs. The first epoch is a history of cosmogony and cosmology.</p>
+<h4>What Yorubas' are known for</h4>
+<p>The Yoruba have traditionally been among the most skilled and productive craftsmen of Africa. They worked at such trades as blacksmithing, weaving, leatherworking, glassmaking, and ivory and wood carving.</p><p>They formed numerous kingdoms of various sizes, each of which was centred on a capital city or town and ruled by a hereditary king, or oba. Their towns became densely populated and eventually grew into the present-day cities of Oyo, Ile-Ife, Ilesha, Ibadan, Ilorin, Ijebu-Ode, Ikere-Ekiti, and others. Oyo developed in the 17th century into the largest of the Yoruba kingdoms (see Oyo empire), while Ile-Ife remained a town of potent religious significance as the site of the earth’s creation according to Yoruba mythology. </p>
+<a>Major traditional Yorùbá values, according to Abayomi, are hard work, integrity, diligence, self-reliance, honesty and social responsibility.</a>
+<br>
+<p>Major towns and cities</p>
+<p>Traditionally, the Yorubas organised themselves into networks of related villages, towns and kingdoms; with most of them headed by an Oba (King) or Baale (a nobleman or mayor). Major Yoruba cities and towns include Ile-Ife, Ibadan, Lagos, Ijebu Ode, Abeokuta, Akure, Ilorin, Ijebu-Igbo, Ogbomosho, Ondo, Badagry, Ado-Ekiti, Osogbo, Ilesa, Oyo, Owo, Kabba, Offa, Ilesa, Ilobu, Ede etc. There are other Yoruba cities and towns such as Ketu, Sabe, Dassa and others in Republic of Benin.
+
+There are other towns and cities with historical affiliation with the Yoruba people because they share one or more similarities together. Some of these cities and towns are Benin city, Warri, Auchi, Okene etc.</>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do:</p> <p>One of the features that make Yoruba people unique is their tendency to form into large city groups instead of small village groups. The Yorubas are today one of the three main ethnic groups that make up Nigeria. They can also be found in neighbouring countries.</p>
+ <p>Yoruba people are a large ethno-linguistic group or ethnic nation in Africa, and the majority of them speak the Yoruba language. The Yoruba constitute approximately 35 percent of Nigeria’s total population, and around 40 million individuals throughout the region of West Africa. </p>
+<h3>Ancient Africa Traditional Religions</h3>
+<p>Although Africa is a huge continent with many different peoples and traditional religions, some beliefs and practices are common through many of the religions. These include:
+Supreme God - Many African religions believed in a supreme god that created the world. Some examples include the gods Oludmare of Nigeria and Katonda of Uganda. In some religions this god may be prayed to for help, but in others the supreme god does not interact with humans.
+Nature Spirits - Beneath the supreme god are a number of spirits who mostly live in nature including animals, water, and the earth.</p>
+<p>Ancestral Spirits - The spirits of dead ancestors often played an important part in traditional African religion. By honoring these spirits, believers hoped that the spirits would help them or would talk to the supreme god on their behalf.
+Sacrifice - Most Ancient African religions offered some sort of sacrifice to their gods or the spirits. This sacrifice varied from small items, like a portion of food or drink, to much larger items like cattle or even human sacrifice.
+Rites of Passage - Traditional religions played an important role in the rites of passage. These included rituals surrounding marriage, entering adulthood, birth, and death.</p>
+</div>
+<a href=https://link.springer.com chapter/> Yoruba link </a>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<hr>
+  <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+
+
+
+   
+</body>
+</html> 

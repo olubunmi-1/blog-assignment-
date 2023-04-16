@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>Page 3</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="mar3.css">
+<meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+   <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+	<link rel="shortcut icon" href="jollof.ico">
+<script>
+function myFunction() {
+  let x = document.getElementById("demo");
+  x.style.fontSize = "20px"; 
+  x.style.color = "white"; 
+}
+</script>
+<body>
+ <h2>Map of West Africa</h2>
+<img src="map.jpg" alt="Map">
+
+
+<div style="text-align:center">
+  <h3>Expanding Grid: Click on the boxes below.</h3>
+</div>
+<!-- Two column -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:green;">
+    West Africa Countries
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:red;">
+   West Africa Traditions
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <p>West Africa has, for a long time, impacted the history of the United States. This is the area of Africa where historical records indicate numbers of men and women were captured and enslaved. This is also the area where musical and artistic traditions have influenced the culture of our country. The countries of West Africa include: Benin, Burkina Faso, Ivory Coast, Cape Verde, Gambia, Ghana, Guinea, Guinea-Bissau, Liberia, Mali, Mauritania, Niger, Nigeria, Senegal, Sierra Leone, and Togo.
+
+Traditional West African art forms that have influenced our culture are folktales, the griot, proverbs, music, and visual arts. In the following few minutes we'll discuss each topic more closely and explain how they've even influenced American art forms and how many of them continue to do so even today.</p>
+<p>Drum playing is also an important part of life in West African culture. Drums made from logs or pieces of wood, then covered with animal skin, were played by West Africans who later became slaves when brought to our country. Drum playing functioned as an important role at religious meetings, weddings, parties, funerals, and other ceremonies. West African drum music is a popular element of music in our country, evident in the music forms used by various bands and musical groups.
+
+<p>This picture show a Nigeria man<img src="man.jpg" alt="drum" width="42" height="42" style="vertical-align:bottom"> displaying how a local drum is used for social gathering.</p>
+
+West African Visual Arts
+<p>Many beautiful and symbolic textiles, sculptures, baskets, and masks were created in West Africa and have influenced our culture. Stamped fabrics, story fabrics, and 'kente' cloth are all representative of Western African culture.</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:orange">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+  <p>Folktales, proverbs, and storytelling were popular oral traditions of West Africa that have influenced writers of our culture. These traditions were practiced by griots, who were skilled poet-musicians that told stories as well as performed music, dances, and drama to help preserve West African history and its legacy</p>
+<p>Every time an old man dies, it is as if a library has burned down'. This is an example of a West African proverb. Another says, 'a good story is like a garden carried in the pocket.' The first proverb represents the importance of oral traditions in West African culture. The other represents the importance of stories. As a West African oral tradition, proverbs demonstrate the values and wisdom of West African peoples. Proverbs like these were brought to our country by enslaved West Africans.
+<p>This is a local drum <img src="drums.jpg" alt="drum" width="42" height="42" style="float:left"> West African music portrays feelings, ideas, and values, much like our own music in the United States. This music is also noted for commemorating special occasions and celebrating historical events, as well as similar characteristics of American music. Music has always been an important part of West African lives.</p>
+ <p>The West African music traditions continue to influence art in our country. Two in particular are a technique called 'call and response' and the custom of playing drums.</p>
+
+
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 3</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+
+
+</body>
+</html> 

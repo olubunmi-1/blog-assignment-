@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Page 5 Form</title>
+   <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+   	<link rel="icon" type="image/x-icon" href="sap.jpg">
+<link rel="stylesheet" type="text/css" href="MAR5.css">
+<script src="script.js" defer></script>
+<script>
+function myFunction() {
+  let x = document.getElementById("demo");
+  x.style.fontSize = "20px"; 
+  x.style.color = "white"; 
+}
+</script>
+
+<body>
+ 	<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen">Order</button>
+<button class="tablink" onclick="openPage('Order', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+<div id="Home" class="tabcontent">
+ <p>Choose your favorite food:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Jollof Rice</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Vgetable Soup</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Beans</label><br>
+<input type="submit" value="Submit">
+</form>
+
+<form>
+<div class="box">
+<!-- First Name input -->
+<h4> Payment Information </h4>
+<p> <span class="fieldName">First Name: </span>
+<input type="text" id="FirstName" name="FirstName" class="input">
+<span class="message"></span></p>
+<!-- Last Name input -->
+<p> <span class="fieldName"> Last Name: </span>
+<input id="LastName" type="text" name="LastName" class="input">
+<span class="message"></span></p>
+
+<!-- Address -->
+<p> <span class="fieldName"> Address: </span>
+<input id="Address" type="text" name="LastName" class="input">
+<span class="message"></span></p>
+<!-- City -->
+<p> <span class="fieldName"> City: </span>
+<input id="City" type="text" name="LastName" class="input">
+<span class="message"></span></p>
+<!-- Postal Code -->
+<p> <span class="fieldName"> Postal Code </span>
+<input id="PostalCode" type="text" name="LastName" class="input"
+style="width:6em;">
+<span class="message"></span></p>
+
+ <!-- Credit Card Input -->
+<h4 class="types"> Enter Your Card Type: VISA, MASTERCARD</h4>
+<p> <span class="fieldName"> Card Type </span>
+<input type="text" id="Code" name="Code" class="input">
+<span class="message"></span></p>
+<!-- Credit Card numbers Input -->
+<p> <span class="fieldName">Card Number </span>
+<input type="text" id="cc1" class="CCinput" maxlength="4">
+<span class="message"></span>
+<input type="text" id="cc2" class="CCinput" maxlength="4">
+<span class="message"></span>
+<input type="text" id="cc3" class="CCinput" maxlength="4">
+<span class="message"></span>
+
+<hr>
+<p style="text-align:center;">
+<button id="submit" type="button"> Submit </button>
+<button> Clear </button> </p>
+<p style="text-align:center;" id="formError"> &nbsp; <p>
+
+
+</div>
+</form>
+<hr>
+
+
+
+
+
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">Name.</p>
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Design by OLUBUMI SALAMI!";
+}
+</script>
+
+</body>
+</html>

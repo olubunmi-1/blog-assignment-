@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Page 4 food</title>
+   <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+   	<link rel="icon" type="image/x-icon" href="sap.jpg">
+<link rel="stylesheet" type="text/css" href="MAR4.css">
+<script src="script.js" defer></script>
+<script>
+function myFunction() {
+  let x = document.getElementById("demo");
+  x.style.fontSize = "20px"; 
+  x.style.color = "white"; 
+}
+</script>
+
+<body>
+<h4>List View or Grid View</h4>
+
+<p>Click on a button to choose list view or grid view.</p>
+
+<div id="btnContainer">
+  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+</div>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h4>Column 1: Jollof Rice Ingedient</h4>
+    <p>It is a dish made with rice, tomatoes, tomato paste, onions, red bell pepper, scotch bonnet peppers, salt, and spices. If it doesn't have the above mentioned ingredients, then it's not true Jollof.</p>
+    <h5>List Ingredients</h5>
+<ul>
+  <li>1/3 cup oil</li>
+  <li>6 medium-sized fresh plum/</li>
+  <li>Billy</li>
+  <li>6 fresh, red poblano peppers </li>
+  <li>3 tablespoons tomato paste</li>
+  <li>2 dried bay leaves</li>
+  <li>4 cups uncooked converted long-grain rice </li>
+</ul> 
+ </div>
+<img src="jollof rice.jpg" alt="Paris">
+  
+<div class="column" style="background-color:#bbb;">
+    <h4>Column 2: Vegetable soup</h4>
+    <p>Efo riro (Nigerian Spinach Stew) is a mouthwatering, savory, African stew made with 'Efo Shoko' (Lagos spinach) or 'Efo Tete' (African spinach).</p>
+    <h5>List Ingredients</h5>
+<ul>
+  <li>1/2 pound (225g)</li>
+  <li>1 small red onion</li>
+  <li>1 tablespoon ground crayfish</li>
+  <li>6 fresh, red poblano peppers </li>
+  <li>3 tablespoons tomato paste</li>
+  <li>2 dried bay leaves</li>
+  <li>1/4 teaspoon Nigerian red dry pepper</li>
+</ul> 
+ </div>
+<img src="efo riro.jpg" alt="Paris">
+   
+  <div class="column" style="background-color:#ccc;">
+    <h4>Column 3: Bean and Corn</h4>
+    <p>Adalu is popular Nigerian corn and beans dish cooked together as a pottage with smoked fish and/or meat with palm oil. This dish is called Ewa Ati Agbado.</p>
+<h5>List Group</h5>
+
+<ul>
+  <li><h5>List Ingredients</h5>
+  <li>1/2 pound (225g)</li>
+  <li>3 - 4 medium sized corn on the cob </li>
+  <li>2 cooking spoons palm kernel cream or palm oil</li>
+  <li>1 large smoked fish</li>
+  <li>3 tbsp dry grounded crayfish or shrimp paste</li>
+  <li>1 medium sized onion</li>
+  <li>1 tbsp dry grounded pepper</li>
+</ul> 
+ </div>
+<img src="Bean and Corn.jpg" alt="Paris">
+  <div class="column" style="background-color:#ddd;">
+  
+    <p>Nigerian beans porridge, also known as stewed beans, is a dietary staple in many households in the country. It is called “ewa riro” in Yoruba or sometimes just referred to as “ewa”, which means beans.</p>
+	<p>Rinse the beans a few times till the water runs clear. · Put in a pot, pour water to cover it and start cooking on medium heat.</p>
+<a>Eat and Enjoy</a>
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
